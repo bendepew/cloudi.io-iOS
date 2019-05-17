@@ -12,9 +12,11 @@
 		2A0CAEBB228CEA32006F3DBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A0CAEB9228CEA32006F3DBD /* Main.storyboard */; };
 		2A0CAEBD228CEA32006F3DBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A0CAEBC228CEA32006F3DBD /* Assets.xcassets */; };
 		2A0CAEC0228CEA32006F3DBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A0CAEBE228CEA32006F3DBD /* LaunchScreen.storyboard */; };
+		B600688A39100632FF378235 /* Pods_cloudi_io.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56106A93F707CE73F53894FF /* Pods_cloudi_io.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DE4E69AC58623B9F2E95FD4 /* Pods-cloudi.io.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cloudi.io.release.xcconfig"; path = "Pods/Target Support Files/Pods-cloudi.io/Pods-cloudi.io.release.xcconfig"; sourceTree = "<group>"; };
 		2A0CAEB2228CEA32006F3DBD /* cloudi.io.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cloudi.io.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A0CAEB5228CEA32006F3DBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A0CAEB7228CEA32006F3DBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		2A0CAEBC228CEA32006F3DBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A0CAEBF228CEA32006F3DBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A0CAEC1228CEA32006F3DBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56106A93F707CE73F53894FF /* Pods_cloudi_io.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cloudi_io.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		669BB82487988B1D5A923529 /* Pods-cloudi.io.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cloudi.io.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cloudi.io/Pods-cloudi.io.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B600688A39100632FF378235 /* Pods_cloudi_io.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				2A0CAEB4228CEA32006F3DBD /* cloudi.io */,
 				2A0CAEB3228CEA32006F3DBD /* Products */,
+				88AC98686FF0B0F805A4D1DF /* Pods */,
+				5A90E3EAAF84DE70B95AB636 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = cloudi.io;
 			sourceTree = "<group>";
 		};
+		5A90E3EAAF84DE70B95AB636 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56106A93F707CE73F53894FF /* Pods_cloudi_io.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88AC98686FF0B0F805A4D1DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				669BB82487988B1D5A923529 /* Pods-cloudi.io.debug.xcconfig */,
+				1DE4E69AC58623B9F2E95FD4 /* Pods-cloudi.io.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A0CAEC4228CEA32006F3DBD /* Build configuration list for PBXNativeTarget "cloudi.io" */;
 			buildPhases = (
+				3CDFBA786835B1D04213106E /* [CP] Check Pods Manifest.lock */,
 				2A0CAEAE228CEA32006F3DBD /* Sources */,
 				2A0CAEAF228CEA32006F3DBD /* Frameworks */,
 				2A0CAEB0228CEA32006F3DBD /* Resources */,
+				B9207113549CF6DA652DB0B2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CDFBA786835B1D04213106E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cloudi.io-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9207113549CF6DA652DB0B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-cloudi.io/Pods-cloudi.io-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cloudi.io/Pods-cloudi.io-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2A0CAEAE228CEA32006F3DBD /* Sources */ = {
@@ -278,6 +355,7 @@
 		};
 		2A0CAEC5228CEA32006F3DBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 669BB82487988B1D5A923529 /* Pods-cloudi.io.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +374,7 @@
 		};
 		2A0CAEC6228CEA32006F3DBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DE4E69AC58623B9F2E95FD4 /* Pods-cloudi.io.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
